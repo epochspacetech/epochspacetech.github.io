@@ -1,0 +1,155 @@
+* {
+    font-family: "Verdana";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
+
+a, a:hover {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 12px;
+}
+
+.header {
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    opacity: 100;
+}
+
+#header_img {
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+}
+
+button {
+    background-color: black;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 90px;
+    display: block;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #111111;
+}
+
+.filler {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #111111;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.main {
+    background-color: #222222;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.capabilities {
+    background-color: #222222;
+    color: white;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.main_p {
+    background-color: #222222;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    width: 70%;
+}
+
+.col-sm-3 {
+    margin: 0;
+    padding: 0;
+}
+
+.main_image {
+    width: 100%;
+    height: auto;
+    opacity: 100;
+}
+
+/*
+* These attributes are used on the index page only to fade using index_scripts.js script
+*/
+.index_header {
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    opacity: 0;
+}
+
+.index_tagline {
+    opacity: 0;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+.index_motto {
+    opacity: 0;
+    font-size: 20px;
+}
+
+.index_main_image {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+.index_cubesat_img {
+    width: 80%;
+    opacity: 0;
+}
+
+.index_cubesat_description {
+    font-size: 26px;
+    opacity: 0;
+}
+
+.index_cubesat_link {
+    font-size: 20px;
+    opacity: 0;
+    color: #0066ff;
+}
+
+.center_p {
+    position: relative;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    padding: 10px;
+    letter-spacing: 1px;
+}
