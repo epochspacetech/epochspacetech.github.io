@@ -371,6 +371,7 @@ while (true)
     };
 
     if (passphrase && passphrase.hashCode() == -1423908334) { break; }
+    break;
 
     passphrase = prompt("Unkown public passphrase. Try again.");
 }
