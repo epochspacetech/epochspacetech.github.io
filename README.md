@@ -12,3 +12,4 @@ The application includes some _hidden_ features:
 * While holding "p", click and drag with the left mouse button to resize panels on the screen.
 * Pressing "b" will toggle panel borders.
 * While holding "n", press up and down arrow to increase or decrease panel border size.
+* Pressing "w" will make an API call and display a simple response in the info panel.

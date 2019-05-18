@@ -272,6 +272,7 @@ class InfoPanel
         this.updateSize();
         
         this.color = PANEL_TEXT_COLOR;
+        this.debug_structurecountval = -1;
     }
 
     /*
@@ -326,6 +327,15 @@ class InfoPanel
         ctx.fillStyle = this.color;
         ctx.fillText("Information about this selection goes here!",
                       this.pos.x + 10, this.pos.y + 24, this.size.x);
+        
+        if (this.debug_structurecountval != -1)
+        {
+            ctx.font = "16px Verdana";
+            ctx.textAlign = "left";
+            ctx.fillStyle = this.color;
+            ctx.fillText("API shows " + this.debug_structurecountval + " available structures.",
+                          this.pos.x + 10, this.pos.y + 48, this.size.x);
+        }
     }
 }
 
@@ -441,6 +451,20 @@ document.body.onkeydown = function(e)
     if (e.keyCode == CODE_B)
     {
         BORDERS = !BORDERS;
+    }
+    else if (e.keyCode == CODE_W)
+    {
+        const http = new XMLHttpRequest();
+        const url = "http://184.56.130.32:5001/api/num-items/structures";
+        http.open("GET", url, true);
+        http.onreadystatechange = (e) => {
+            if (http.responseText)
+            {
+                console.log("Got a response!. " + http.responseText);
+                info_panel.debug_structurecountval = http.responseText;
+            }
+        }
+        http.send();
     }
 
     if (keys[CODE_N])
