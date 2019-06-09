@@ -21,6 +21,21 @@ p {
     font-size: 12px;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
 .header {
     background-color: black;
     height: 90px;
@@ -32,6 +47,11 @@ p {
     height: 90px;
     display: block;
     margin: 0 auto;
+}
+
+#cet_img {
+    width: 80%;
+    max-width: 800px;
 }
 
 .row {
