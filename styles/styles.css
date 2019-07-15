@@ -121,6 +121,23 @@ h3 {
     height: 100%;
 }
 
+.tb {
+    display: table;
+}
+
+.tbc-pic {
+    width: 25%;
+    display: table-cell;
+}
+
+.tbc-bio {
+    background-color: #444444;
+    display: table-cell; 
+    width: 75%;
+    vertical-align: top;
+    padding: 1%;
+}
+
 /*
 * ----- Index classes -----
 */
