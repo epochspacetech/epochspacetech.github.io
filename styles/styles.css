@@ -37,6 +37,17 @@ button {
     transition: 0.4s;
 }
 
+button.submit {
+    background-color: #999999;
+    border-radius: 5%;
+    width: auto;
+    height: auto;
+    display: auto;
+    font-size: auto;
+    transition: 0s;
+    padding: 10%;
+}
+
 button:hover {
     background-color: #333333;
 }
@@ -106,6 +117,10 @@ h3 {
     color: white;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+input,textarea {
+    color: black;
 }
 
 .main_p {
