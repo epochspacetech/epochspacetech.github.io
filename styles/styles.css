@@ -1,3 +1,7 @@
+/*
+* ----- Standard tags -----
+*/
+
 * {
     font-family: "Verdana";
 }
@@ -21,6 +25,33 @@ p {
     font-size: 12px;
 }
 
+button {
+    background-color: black;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    display: block;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+button.submit {
+    background-color: #999999;
+    border-radius: 5%;
+    width: auto;
+    height: auto;
+    display: auto;
+    font-size: auto;
+    transition: 0s;
+    padding: 10%;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
 h1 {
     font-size: 48px;
     font-weight: bold;
@@ -31,20 +62,24 @@ h2 {
     font-weight: normal;
 }
 
-h2 {
-    font-size: 32px;
+h3 {
+    font-size: 24px;
     font-weight: normal;
 }
 
+/*
+* ----- Standard classes -----
+*/
+
 .header {
-    background-color: black;
-    height: 90px;
+    background-color: #000000;
+    height: 80px;
     width: 100%;
     opacity: 100;
 }
 
 #header_img {
-    height: 90px;
+    height: 80px;
     display: block;
     margin: 0 auto;
 }
@@ -60,25 +95,21 @@ h2 {
     width: 100%;
 }
 
-button {
-    background-color: black;
-    border-width: 0;
-    padding: 0;
+.col_filler {
     margin: 0;
-    width: 100%;
-    height: 90px;
-    display: block;
-    font-size: 18px;
-    transition: 0.4s;
+    padding: 0;
 }
 
-button:hover {
+.row_break {
+    height: 5em; /*I'm a little worried about this set-up, but it at least gets rid of all the <br> statements*/
+}
+
+.footer {
     background-color: #111111;
-}
-
-.filler {
-    margin: 0;
-    padding: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
 }
 
 .main {
@@ -88,11 +119,8 @@ button:hover {
     padding-right: 10%;
 }
 
-.capabilities {
-    background-color: #222222;
-    color: white;
-    padding-left: 10%;
-    padding-right: 10%;
+input,textarea {
+    color: black;
 }
 
 .main_p {
@@ -103,27 +131,44 @@ button:hover {
     width: 70%;
 }
 
-.col-sm-3 {
-    margin: 0;
-    padding: 0;
+.responsive {
+    width: 100%;
+    height: 100%;
 }
 
-.main_image {
-    width: 100%;
-    height: auto;
-    opacity: 100;
+.tb {
+    display: table;
+}
+
+.tbc-pic {
+    width: 25%;
+    display: table-cell;
+}
+
+.tbc-bio {
+    background-color: #444444;
+    display: table-cell; 
+    width: 75%;
+    vertical-align: top;
+    padding: 1%;
 }
 
 /*
-* These attributes are used on the index page only to fade using index_scripts.js script
+* ----- Index classes -----
 */
+
 .index_header {
-    background-color: black;
-    height: 90px;
+    background-color: #000000;
+    height: 80px;
     width: 100%;
     opacity: 0;
-    padding: 0;
-    margin: 0;
+}
+
+.index_capabilities {
+    background-color: #222222;
+    color: white;
+    padding-left: 35%;
+    padding-right: 35%;
 }
 
 .index_tagline {
@@ -146,7 +191,6 @@ button:hover {
 .index_cubesat_img {
     width: 80%;
     opacity: 0;
-    max-width: 300px;
 }
 
 .index_cubesat_description {
@@ -158,13 +202,4 @@ button:hover {
     font-size: 20px;
     opacity: 0;
     color: #0066ff;
-}
-
-.center_p {
-    position: relative;
-    left: 30%;
-    right: 30%;
-    width: 40%;
-    padding: 10px;
-    letter-spacing: 1px;
 }
